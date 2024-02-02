@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Outfit";
+  src: url("../assets/fonts/outfit/Outfit-VariableFont_wght.ttf")
+    format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "young-serif";
+  src: url("../assets/fonts/young-serif/YoungSerif-Regular.ttf")
+    format("truetype");
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-outfit text-lg text-dark-charcoal grid place-content-center;
+  }
+
+  h1 {
+    @apply font-young text-2xl font-normal text-dark-charcoal;
+  }
+
+  h2 {
+    @apply font-young text-nutmeg text-2xl font-normal;
+  }
+
+  h3 {
+    @apply text-dark-raspberry text-xl font-semibold;
+  }
+
+  p {
+    @apply text-wenge-brown;
+  }
+}
